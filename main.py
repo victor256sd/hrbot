@@ -65,7 +65,7 @@ if st.session_state.get('authentication_status'):
     INSTRUCTION = f.decrypt(INSTRUCTION_ENCRYPTED).decode()
 
     # Set page layout and title.
-    st.set_page_config(page_title="HR Bot AI", page_icon=":notebook:", layout="wide")
+    st.set_page_config(page_title="HR Bot", page_icon=":notebook:", layout="wide")
     st.header(":notebook: HR Bot")
     
     # Field for OpenAI API key.

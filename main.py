@@ -117,6 +117,7 @@ if st.session_state.get('authentication_status'):
             cleaned_response = re.sub(r'【.*?†.*?】', '', response2.output_text) #output[1].content[0].text)
         except:
             cleaned_response = re.sub(r'【.*?†.*?】', '', response2.output[1].content[0].text)
+        st.write("*The insights and recommendations provided by this application are AI generated and informed by HR best practices and publicly available data. They are intended for informational and support purposes only and do not constitute legal advice, employment decisions, or professional HR determinations. Employers and HR professionals should consult qualified legal counsel, certified HR experts, or relevant regulatory authorities before making any employment-related decisions based on the output. This tool is designed to assist, not replace, human judgment and professional expertise.*")
         st.markdown("#### Response")
         st.markdown(cleaned_response)
 
